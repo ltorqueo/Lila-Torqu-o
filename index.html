@@ -3,45 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF à Télécharger</title>
+    <title>Ma Page</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Times New Roman', Times, serif;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start; /* Alignement au début */
             min-height: 100vh;
             margin: 0;
             background-color: #f4f4f9;
+            padding: 20px; /* Ajout d'un peu de marge */
         }
         h1 {
-            text-align: center;
+            text-align: left; /* Alignement à gauche */
             font-size: 24px;
+            margin-top: 0; /* Commence un peu plus haut */
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
+        .author {
+            font-weight: bold; /* Texte en gras */
+            margin: 0; /* Enlever les marges pour le positionnement */
         }
-        li {
-            margin: 10px 0;
-        }
-        a {
-            text-decoration: none;
-            color: #0073e6;
-            font-size: 18px;
-        }
-        a:hover {
-            color: #005bb5;
+        .location {
+            margin: 0; /* Enlever les marges pour le positionnement */
         }
     </style>
 </head>
 <body>
     <div>
-        <h1>Mes PDF à Télécharger</h1>
-        <ul>
-            <li><a href="pdf/AttachesParisiennesLivret_HD.pdf" target="_blank">AttachesParisiennesLivret_HD PDF</a></li>
-            <li><a href="pdf/you_crack_me_up.pdf" target="_blank">you crack me up! PDF</a></li>
-        </ul>
+        <h1 class="author">Lila Torquéo</h1>
+        <p class="location">basée entre Paris et Brussels</p>
     </div>
 </body>
 </html>
