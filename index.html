@@ -8,31 +8,51 @@
         body {
             font-family: 'Times New Roman', Times, serif;
             display: flex;
-            justify-content: center;
-            align-items: flex-start; /* Alignement au début */
+            justify-content: flex-start; /* Alignement à gauche */
+            align-items: flex-start;
             min-height: 100vh;
             margin: 0;
             background-color: #f4f4f9;
             padding: 20px; /* Ajout d'un peu de marge */
         }
         h1 {
-            text-align: left; /* Alignement à gauche */
-            font-size: 24px;
-            margin-top: 0; /* Commence un peu plus haut */
-        }
-        .author {
+            font-size: 14px; /* Taille de la police pour Lila Torquéo */
             font-weight: bold; /* Texte en gras */
-            margin: 0; /* Enlever les marges pour le positionnement */
+            margin: 0; /* Enlever les marges */
+            line-height: 1.2; /* Espacement entre les lignes */
         }
         .location {
-            margin: 0; /* Enlever les marges pour le positionnement */
+            font-size: 12px; /* Taille de la police pour la localisation */
+            margin: 0; /* Enlever les marges */
+            line-height: 1.2; /* Espacement entre les lignes */
+        }
+        .pdf-list {
+            font-size: 12px; /* Taille de la police pour la liste des PDF */
+            margin-top: 10px; /* Ajout d'un espace entre le titre et la liste */
+        }
+        .pdf-item {
+            margin: 3px 0; /* Espacement entre les éléments de la liste */
         }
     </style>
 </head>
 <body>
     <div>
-        <h1 class="author">Lila Torquéo</h1>
-        <p class="location">basée entre Paris et Brussels</p>
+        <h1>Lila Torquéo</h1>
+        <p class="location">basée entre Paris et Bruxelles</p>
+        <div class="pdf-list">
+            <div class="pdf-item">“Gabriel Day, La part cosmique de l’oeuf”</div>
+            <div class="pdf-item">« CRÛ », Palais des Beaux-Arts de Paris, 10 juin - 18 juillet 2021</div>
+            <div class="pdf-item">“Si tu te sens frémir, meurs, avance, frappe !”, texte de l’exposition de Lauren Coullard, galerie A.Romy, Zürich, 2022</div>
+            <div class="pdf-item">« Ce n’est pas une menace, c’est une promesse », avec Lou Ferrand et en collaboration avec Act Up-Paris, Palais des Beaux-Arts de Paris, 2021-2022</div>
+            <div class="pdf-item">« La Fondation Giacobetti », Cité-Montmartre-aux-artistes, Paris, 2022</div>
+            <div class="pdf-item">“Is this heaven”, texte de l’exposition de Mario Mélis, Voiture14, Marseille, 2022</div>
+            <div class="pdf-item">“Kim Dhillon, Counter-Texts, Language in Contemporary Art” - “Marc Camille Chaimowicz, rêverie, dans la pratique et dans ses formes” - “Jimmy DeSana, Submission”, notes critiques, n°60 de CRITIQUE D’ART, 2023</div>
+            <div class="pdf-item">“Window card”, texte pour l’exposition personnelle de Laurent Veldekens, Ada Ventura, Bruxelles, 2023</div>
+            <div class="pdf-item">“ACHéTE LE NACRé à LEURS âMES”, texte de l’exposition de David Douard, galerie Konrad Fischer, Berlin, 2023</div>
+            <div class="pdf-item">« The Airbag Generation », Médusa Offspace, Bruxelles, 2023</div>
+            <div class="pdf-item">« Attaches parisiennes pour poignées de porte », Villa Belleville, Paris, 2023</div>
+            <div class="pdf-item">“You crack me up!“, texte de l’exposition d’Angélique Aubrit, Ludovic Beillard, Victoria Palacios, Wouters Gallery, Brussels, 2024</div>
+        </div>
     </div>
 </body>
 </html>
