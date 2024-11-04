@@ -3,50 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mes PDF à Télécharger</title>
+    <title>Ma Page</title>
     <style>
         body {
             font-family: 'Times New Roman', Times, serif;
-            padding: 20px;
-            color: black;
-            font-size: 14px;
+            display: flex;
+            justify-content: flex-start; /* Alignement à gauche */
+            align-items: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+            padding: 20px; /* Ajout d'un peu de marge */
         }
         h1 {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 5px;
+            font-size: 12px; /* Taille de la police pour Lila Torquéo */
+            font-weight: bold; /* Texte en gras */
+            margin: 0; /* Enlever les marges */
+            line-height: 1.2; /* Espacement entre les lignes */
         }
-        h2 {
-            font-size: 18px;
-            margin-bottom: 20px;
+        .location {
+            font-size: 12px; /* Taille de la police pour la localisation */
+            margin: 0; /* Enlever les marges */
+            line-height: 1.2; /* Espacement entre les lignes */
+        }
+        .pdf-list {
+            font-size: 12px; /* Taille de la police pour la liste des PDF */
+            margin-top: 10px; /* Ajout d'un espace entre le titre et la liste */
         }
         .pdf-item {
-            margin-bottom: 10px;
-        }
-        .pdf-link {
-            color: black;
-            text-decoration: none;
-        }
-        .pdf-link:hover {
-            text-decoration: underline;
+            margin: 3px 0; /* Espacement entre les éléments de la liste */
         }
     </style>
 </head>
 <body>
-    <h1>Lila Torquéo</h1>
-    <h2>basée entre Paris et Bruxelles</h2>
-
-    <div class="pdf-list">
-        <div class="pdf-item"><a class="pdf-link" href="pdf/Gabriel%20Day,%20La%20part%20cosmique%20de%20l’oeuf.pdf" target="_blank">Gabriel Day, La part cosmique de l’oeuf, texte pour le catalogue d’exposition Un plus grand lac, Magasins généraux, 2020</a></div>
-        <div class="pdf-item"><a class="pdf-link" href="pdf/CRÛ,%20Palais%20des%20Beaux-Arts%20de%20Paris,%2010%20juin%20-%2018%20juillet%202021.pdf" target="_blank">CRÛ, Palais des Beaux-Arts de Paris, 10 juin - 18 juillet 2021</a></div>
-        <div class="pdf-item"><a class="pdf-link" href="pdf/Si%20tu%20te%20sens%20frémir,%20meurs,%20avance,%20frappe%20!.pdf" target="_blank">Si tu te sens frémir, meurs, avance, frappe !, texte de l’exposition de Lauren Coullard, galerie A.Romy, Zürich, 2022</a></div>
-        <div class="pdf-item"><a class="pdf-link" href="pdf/La%20Fondation%20Giacobetti,%20Cité-Montmartre-aux-artistes,%20Paris,%202022.pdf" target="_blank">La Fondation Giacobetti, Cité-Montmartre-aux-artistes, Paris, 2022</a></div>
-        <div class="pdf-item"><a class="pdf-link" href="pdf/Is%20this%20heaven,%20texte%20de%20l’exposition%20de%20Mario%20Mélis,%20Voiture14,%20Marseille,%202022.pdf" target="_blank">Is this heaven, texte de l’exposition de Mario Mélis, Voiture14, Marseille, 2022</a></div>
-        <div class="pdf-item"><a class="pdf-link" href="pdf/Kim%20Dhillon,%20Counter-Texts,%20Language%20in%20Contemporary%20Art%20-%20Marc%20Camille%20Chaimowicz,%20rêverie,%20dans%20la%20pratique%20et%20dans%20ses%20formes%20-%20Jimmy%20DeSana,%20Submission,%20notes%20critiques,%20n°60%20de%20CRITIQUE%20D’ART,%202023.pdf" target="_blank">Kim Dhillon, Counter-Texts, Language in Contemporary Art - Marc Camille Chaimowicz, rêverie, dans la pratique et dans ses formes - Jimmy DeSana, Submission, notes critiques, n°60 de CRITIQUE D’ART, 2023</a></div>
-        <div class="pdf-item"><a class="pdf-link" href="pdf/Window%20card,%20texte%20pour%20l’exposition%20personnelle%20de%20Laurent%20Veldekens,%20Ada%20Ventura,%20Bruxelles,%202023.pdf" target="_blank">Window card, texte pour l’exposition personnelle de Laurent Veldekens, Ada Ventura, Bruxelles, 2023</a></div>
-        <div class="pdf-item"><a class="pdf-link" href="pdf/ACHéTE%20LE%20NACRé%20à%20LEURS%20âMES,%20texte%20de%20l’exposition%20de%20David%20Douard,%20galerie%20Konrad%20Fischer,%20Berlin,%202023.pdf" target="_blank">ACHéTE LE NACRé à LEURS âMES, texte de l’exposition de David Douard, galerie Konrad Fischer, Berlin, 2023</a></div>
+    <div>
+        <h1>Lila Torquéo</h1>
+        <p class="location">basée entre Paris et Bruxelles</p>
+        <div class="pdf-list">
+            <a class="pdf-item" href="pdf/CRÛ.pdf" target="_blank">« CRÛ », Palais des Beaux-Arts de Paris, 10 juin - 18 juillet 2021</a><br>
+            <a class="pdf-item" href="pdf/La%20Fondation%20Giacobetti.pdf" target="_blank">« La Fondation Giacobetti », Cité-Montmartre-aux-artistes, Paris, 2022</a><br>
+            <a class="pdf-item" href="pdf/The%20Airbag%20Generation.pdf" target="_blank">« The Airbag Generation », Médusa Offspace, Bruxelles, 2023</a><br>
+            <a class="pdf-item" href="pdf/ACHÉTE%20LE%20NACRé%20à%20LEURS%20âMES.pdf" target="_blank">“ACHÉTE LE NACRé à LEURS âMES”, texte de l’exposition de David Douard, galerie Konrad Fischer, Berlin, 2023</a><br>
+            <a class="pdf-item" href="pdf/Gabriel%20Day,%20La%20part%20cosmique%20de%20l’oeuf.pdf" target="_blank">“Gabriel Day, La part cosmique de l’oeuf”, texte pour le catalogue d’exposition Un plus grand lac, Magasins généraux, 2020</a><br>
+            <a class="pdf-item" href="pdf/Is%20this%20heaven.pdf" target="_blank">“Is this heaven”, texte de l’exposition de Mario Mélis, Voiture14, Marseille, 2022</a><br>
+            <a class="pdf-item" href="pdf/Kim%20Dhillon,%20Marc%20Camille%20Chaimowicz,%20Jimmy%20DeSana.pdf" target="_blank">“Kim Dhillon, Counter-Texts, Language in Contemporary Art” - “Marc Camille Chaimowicz, rêverie, dans la pratique et dans ses formes” - “Jimmy DeSana, Submission”, notes critiques, n°60 de CRITIQUE D’ART, 2023</a><br>
+            <a class="pdf-item" href="pdf/Si%20tu%20te%20sens%20frémir,%20meurs,%20avance,%20frappe%20!.pdf" target="_blank">“Si tu te sens frémir, meurs, avance, frappe !”, texte de l’exposition de Lauren Coullard, galerie A.Romy, Zürich, 2022</a><br>
+            <a class="pdf-item" href="pdf/Window%20card.pdf" target="_blank">“Window card”, texte pour l’exposition personnelle de Laurent Veldekens, Ada Ventura, Bruxelles, 2023</a><br>
+            <a class="pdf-item" href="pdf/You%20crack%20me%20up!.pdf" target="_blank">“You crack me up!“, texte de l’exposition d’Angélique Aubrit, Ludovic Beillard, Victoria Palacios, Wouters Gallery, Brussels, 2024</a><br>
+        </div>
     </div>
-
-    <div class="pdf-item"><a class="pdf-link" href="pdf/Textes_Lila_Torquéo.pdf" target="_blank">Textes Lila Torquéo</a></div>
 </body>
 </html>
