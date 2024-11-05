@@ -6,7 +6,7 @@
     <title>Ma Page</title>
     <style>
         body {
-            font-family: 'Times New Roman', Times, serif;
+            font-family: 'Times New Roman', Times, serif; /* Police serif */
             display: flex;
             justify-content: flex-start; /* Alignement à gauche */
             align-items: flex-start;
@@ -27,11 +27,12 @@
             line-height: 1.2; /* Espacement entre les lignes */
         }
         .pdf-list {
-            font-size: 12px; /* Taille de la police pour la liste des PDF */
+            font-size: 14px; /* Taille de la police pour la liste des PDF */
             margin-top: 10px; /* Ajout d'un espace entre le titre et la liste */
         }
         .pdf-item {
-            margin: 3px 0; /* Espacement entre les éléments de la liste */
+            margin: 10px 0; /* Espacement entre les éléments de la liste */
+            line-height: 1.5; /* Espacement entre les lignes des éléments */
         }
     </style>
 </head>
@@ -40,6 +41,7 @@
         <h1>Lila Torquéo</h1>
         <p class="location">basée entre Paris et Bruxelles</p>
         <div class="pdf-list">
+            <a class="pdf-item" href="pdf/Attaches%20parisiennes%20pour%20poignées%20de%20porte.pdf" target="_blank">« Attaches parisiennes pour poignées de porte », Villa Belleville, Paris, 2023</a><br>
             <a class="pdf-item" href="pdf/CRÛ.pdf" target="_blank">« CRÛ », Palais des Beaux-Arts de Paris, 10 juin - 18 juillet 2021</a><br>
             <a class="pdf-item" href="pdf/La%20Fondation%20Giacobetti.pdf" target="_blank">« La Fondation Giacobetti », Cité-Montmartre-aux-artistes, Paris, 2022</a><br>
             <a class="pdf-item" href="pdf/The%20Airbag%20Generation.pdf" target="_blank">« The Airbag Generation », Médusa Offspace, Bruxelles, 2023</a><br>
